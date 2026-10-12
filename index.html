@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1530">
+  <title>Cuenta de cobro · JR Multiservicios</title>
+  <link rel="icon" type="image/png" href="icono.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a class="brand" href="./" aria-label="JR Multiservicios"><img class="logo-full" src="logo.png" alt="JR Multiservicios"><img class="logo-mini" src="icono.png" alt="" aria-hidden="true"></a>
+      <div class="topbar-actions">
+        <a class="tel" id="topTel" href="#"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg><span id="topTelText"></span></a>
+        <a class="btn btn-wa btn-sm" id="topWa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .78.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.25-.12-1.45-.72-1.7-.8-.22-.08-.4-.12-.56.12-.17.25-.65.8-.8.97-.14.16-.3.18-.54.06a6.7 6.7 0 0 1-3.3-2.9c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.42-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42h-.47c-.16 0-.42.06-.64.3-.22.25-.85.83-.85 2.02 0 1.2.87 2.34 1 2.5.12.17 1.7 2.6 4.12 3.65 1.52.65 2.12.7 2.88.6.46-.07 1.45-.6 1.65-1.17.2-.57.2-1.06.14-1.17-.06-.1-.22-.16-.47-.28z"/></svg>WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="pill"><i></i> Tecnología bien instalada · Bogotá</span>
+      <h1>Cuenta de cobro<br><span class="accent">JR Multiservicios</span></h1>
+      <p class="lead">Diligencia los espacios y genera el documento.</p>
+    </div>
+  </section>
+
+  <main class="wrap layout">
+
+    <!-- ============ FORMULARIO ============ -->
+    <div class="col-form">
+
+      <p class="intro">Hola. Esta herramienta arma tu cuenta de cobro por el trabajo que realizaste. Llena los espacios paso por paso y vas viendo cómo queda el documento en la vista previa. Al final, toca <strong>“Descargar PDF”</strong> para guardarlo y enviarlo.</p>
+
+      <section class="card" id="step1">
+        <h2><span class="num">1</span> Paso 1 de 3 · A quién le cobras</h2>
+        <div class="field">
+          <label for="cliente">Nombre de la compañía o cliente</label>
+          <p class="hint">Aquí escribes a quién le estás cobrando.</p>
+          <input id="cliente" type="text" autocomplete="off" placeholder="Ej. Conjunto Residencial Los Pinos">
+        </div>
+        <div class="field">
+          <label for="nitCliente">NIT o cédula del cliente (opcional)</label>
+          <input id="nitCliente" type="text" autocomplete="off" placeholder="Ej. 900.123.456-7">
+        </div>
+
+        <h3 class="subhead">Quién cobra</h3>
+        <p class="hint">Estos datos se guardan en este dispositivo: solo los escribes una vez.</p>
+        <div class="field">
+          <label for="titular">Nombre completo de quien cobra</label>
+          <input id="titular" type="text" autocomplete="name" placeholder="Nombre y apellidos">
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="cedula">Tu cédula de ciudadanía</label>
+            <input id="cedula" type="text" inputmode="numeric" autocomplete="off" placeholder="Ej. 1.020.304.050">
+          </div>
+          <div class="field">
+            <label for="ciudad">Ciudad</label>
+            <input id="ciudad" type="text" autocomplete="off">
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="step2">
+        <h2><span class="num">2</span> Paso 2 de 3 · El servicio y el valor</h2>
+        <div class="field">
+          <label for="fecha">Fecha de la cuenta de cobro</label>
+          <p class="hint">Ya viene con la fecha de hoy.</p>
+          <input id="fecha" type="date">
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="desde">Servicio prestado desde (opcional)</label>
+            <input id="desde" type="date">
+          </div>
+          <div class="field">
+            <label for="hasta">Hasta (opcional)</label>
+            <input id="hasta" type="date">
+          </div>
+        </div>
+        <div class="field">
+          <label for="concepto">¿Qué trabajo hiciste? (concepto)</label>
+          <p class="hint">Descríbelo en tus propias palabras, como si se lo contaras a alguien.</p>
+          <textarea id="concepto" placeholder="Ej. Instalación de 4 cámaras de seguridad y mantenimiento del sistema de citofonía"></textarea>
+        </div>
+        <div class="field">
+          <label for="retencion">Retención aplicada (%)</label>
+          <div class="chips" id="retChips">
+            <button type="button" class="chip is-on" data-ret="0">0%</button>
+            <button type="button" class="chip" data-ret="4">4%</button>
+            <button type="button" class="chip" data-ret="6">6%</button>
+            <button type="button" class="chip" data-ret="10">10%</button>
+            <button type="button" class="chip" data-ret="11">11%</button>
+            <input id="retencion" type="number" min="0" max="50" step="0.5" value="0" inputmode="decimal" aria-label="Otro porcentaje">
+          </div>
+          <p class="hint">Así te queda tu plata completa: escribe abajo lo que quieres recibir en tu bolsillo, y calculamos el valor que debe aparecer en la cuenta de cobro para que, después de que te descuenten este porcentaje, te llegue exactamente eso.</p>
+        </div>
+        <div class="field">
+          <label for="neto">Lo que quieres recibir (neto, COP)</label>
+          <input id="neto" type="text" inputmode="numeric" autocomplete="off" placeholder="$ 0">
+          <div class="net-box">Valor que va a aparecer en la cuenta de cobro:<b id="netBox">$ 0</b></div>
+        </div>
+      </section>
+
+      <section class="card" id="step3">
+        <h2><span class="num">3</span> Paso 3 de 3 · ¿Cómo te pagan? (opcional)</h2>
+        <div class="field">
+          <label for="banco">Banco</label>
+          <input id="banco" type="text" autocomplete="off" placeholder="Ej. Bancolombia">
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="tipoCuenta">Tipo de cuenta</label>
+            <select id="tipoCuenta">
+              <option value="Ahorros">Ahorros</option>
+              <option value="Corriente">Corriente</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="numeroCuenta">Número de cuenta</label>
+            <input id="numeroCuenta" type="text" inputmode="numeric" autocomplete="off">
+          </div>
+        </div>
+        <div class="field">
+          <label for="numero">Número de cuenta de cobro</label>
+          <input id="numero" type="text" readonly>
+          <p class="hint">Se genera solo y queda guardado en este dispositivo, para que lleves el orden de todas tus cuentas de cobro.</p>
+        </div>
+      </section>
+
+      <section class="card card-actions">
+        <button type="button" class="btn btn-wa btn-lg" id="btnPdf">Descargar PDF</button>
+        <p class="hint center">El PDF se descarga directo a tu dispositivo. Esta cuenta de cobro queda guardada en tu historial.</p>
+        <button type="button" class="btn btn-navy btn-lg" id="btnShare">Enviar cuenta de cobro</button>
+        <p class="hint center">Se abre el panel para compartir de tu celular (correo, WhatsApp, etc.) con el PDF ya listo. Si tu dispositivo no lo permite, se descarga el PDF y se abre un borrador de correo para que lo adjuntes tú mismo.</p>
+        <button type="button" class="btn btn-ghost" id="btnNew">Empezar una cuenta de cobro nueva</button>
+      </section>
+
+      <section class="card" id="historyCard">
+        <h2>Historial de cuentas de cobro en este dispositivo</h2>
+        <p class="hint" id="historyEmpty">Todavía no has generado ninguna cuenta de cobro desde este dispositivo.</p>
+        <ul class="history" id="history"></ul>
+      </section>
+    </div>
+
+    <!-- ============ VISTA PREVIA ============ -->
+    <aside class="col-preview" id="preview">
+      <div class="preview-label">Vista previa del documento</div>
+      <div class="paper-wrap" id="paperWrap">
+        <div class="paper-scale" id="paperScale"></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="sitefoot">
+    <div class="wrap">© JR Multiservicios · Tecnología bien instalada · Bogotá</div>
+  </footer>
+
+  <a class="fab" href="#preview">Ver vista previa</a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="jspdf.umd.min.js"></script>
+  <script src="html2canvas.min.js"></script>
+  <script src="config.js"></script>
+  <script src="registro.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
